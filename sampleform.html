@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Driver Registration Form</title>
+</head>
+<body>
+<form action="include.php" method="POST">
+	<table>
+		<tr>
+		<td>Name: </td>
+		<td><input type="text" name="username" required></td>	
+		</tr>
+		<tr>
+		<td>Car number: </td>
+		<td><input type="text" name="carnumber"></td>
+		</tr>
+		<tr>
+		<td>Gender: </td>
+		<td>
+			<input type="radio" name="gender" value="m" required>Male
+			<input type="radio" name="gender" value="f" required>Female
+		</td>
+		</tr>
+		<tr>
+			<td>National ID/Passport: </td>
+			<td><input type="text" name="nid" required></td>
+		</tr>
+		<tr>
+			<td>Phone no:</td>
+			<td>
+				<select name="phoneCode" required>
+				<option selected hidden value=""></option>
+				<option value="+880">+880</option>	
+				</select>	
+				<input type="phone" name="phone" required>
+			</td>
+		</tr>
+		<tr>
+			<td>Do you have a registered car?  </td>
+			<td>
+				<input type="radio" name="havedriver" value="y" required>Yes
+			<input type="radio" name="havedriver" value="n" required>No
+			</td>
+		</tr>
+
+		
+		<tr>
+			<td><input type="submit" value="submit"></td>
+		</tr>
+	</table>
+</form>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Feedback Form</title>
+	<style>
+		
+		body{
+      background-color: #f2f2f2;
+      padding-top: 60px;
+        padding-bottom: 40px;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        color: #9B1B30;
+        font-family: monospace;
+        font-size: 25px;
+        text-align: left;
+      }
+      th {
+        background-color: #9B1B30;
+        color: white;
+      }
+      tr:nth-child(even) {background-color: #f2f2f2}
+      h1{
+        color: black;
+        text-align: center;
+      }
+
+      .container{
+        width: 80%;
+        margin: 0 auto; /* Center the DIV horizontally */
+    }
+    .fixed-header, .fixed-footer{
+        width: 100%;
+        position: fixed;        
+        background: #333;
+        padding: 10px 0;
+        color: black;
+    }
+    .fixed-header{
+        top: 0;
+    }
+    .fixed-footer{
+        bottom: 0;
+    }    
+    /* Some more styles to beutify this example */
+    nav a{
+        color: #fff;
+        float: left;
+        text-decoration: none;
+        padding: 7px 25px;
+        display: inline-block;
+        float: right;
+    }
+    .container p{
+        line-height: 200px; /* Create scrollbar to test positioning */
+    }
+
+
+	</style>
+</head>
+<body>
+
+
+		<div class="fixed-header">
+        <div>
+        <img src="logo.gif" height="80px">
+        <img src="logo-font.jpg" height="100px">            
+        </div>
+        <div class="container">
+            <nav>
+                <a href="home.html">Contact Us</a>
+                <a href="feedback.html">Feedback</a>
+                <a href="car.html">Vehicle Register form</a>
+                <a href="driver.html">Driver Register form</a>
+                <a href="unemployeddriver.php">Search Drivers</a>
+                <a href="carquery.php">Vehicle Search Query</a>
+                <a href="home.html">Home</a>
+            </nav>
+        </div>
+    </div>
+
+
+	<br><br><br><br><br><h1>Feedback Form</h1> <hr>
+
+
+
+
+
+<form action="feedback-inc.php" method="POST">
+	<table>
+		<tr>
+		<td>Name: </td>
+		<td><input type="text" name="username" required></td>	<!-- done -->
+		</tr>
+
+		<td>Email (for future contact purpose): </td>
+		<td><input type="email" name="email" required></td>	<!-- done -->
+		</tr>
+		<tr>
+
+		<tr>
+			<td>Are you having trouble using our services or our services not working?  </td>
+			<td>
+				<input type="radio" name="questiona" value="y" required>Yes <!-- done -->
+			<input type="radio" name="questiona" value="n" required>No
+			</td>
+		</tr>
+
+		<tr>
+			<td>Do you want to report a misconduct of a member?  </td>
+			<td>
+				<input type="radio" name="questionb" value="y" required>Yes
+			<input type="radio" name="questionb" value="n" required>No
+			</td>
+		</tr>
+
+
+		<tr>
+			<td>Other: </td>
+			<td>
+				<input type="radio" name="questionc" value="y" required>Yes
+			<input type="radio" name="questionc" value="n" required>No
+			</td>
+		</tr>
+
+		<tr>
+		<td>Feedback: </td>
+		<td>
+			<textarea rows="4" cols="50" name="feedback" required></textarea>
+		</td>	
+		</tr>
+
+
+		<br>
+		
+		<tr>
+			<td><input type="submit" value="submit"></td>
+		</tr>
+	</table>
+</form>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+body{
+      background-color: #f2f2f2;
+      padding-top: 60px;
+        padding-bottom: 40px;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        color: #9B1B30;
+        font-family: monospace;
+        font-size: 25px;
+        text-align: left;
+      }
+      th {
+        background-color: #9B1B30;
+        color: white;
+      }
+      tr:nth-child(even) {background-color: #f2f2f2}
+      h1{
+        color: black;
+        text-align: center;
+      }
+
+      .container{
+        width: 80%;
+        margin: 0 auto; /* Center the DIV horizontally */
+    }
+    .fixed-header, .fixed-footer{
+        width: 100%;
+        position: fixed;        
+        background: #333;
+        padding: 10px 0;
+        color: black;
+    }
+    .fixed-header{
+        top: 0;
+    }
+    .fixed-footer{
+        bottom: 0;
+    }    
+    /* Some more styles to beutify this example */
+    nav a{
+        color: #fff;
+        float: left;
+        text-decoration: none;
+        padding: 7px 25px;
+        display: inline-block;
+        float: right;
+    }
+    .container p{
+        line-height: 200px; /* Create scrollbar to test positioning */
+    }
+    /* Some more styles to beutify this example */
+    nav a{
+        color: #fff;
+        float: left;
+        text-decoration: none;
+        padding: 7px 25px;
+        display: inline-block;
+        float: right;
+    }
+    .container p{
+        line-height: 200px; /* Create scrollbar to test positioning */
+    }
+		
+	</style>
+	<title> Car Registration Form</title>
+</head>
+<body>
+
+
+		<div class="fixed-header">
+        <div>
+        <img src="logo.gif" height="80px">
+        <img src="logo-font.jpg" height="100px">            
+        </div>
+        <div class="container">
+            <nav>
+                <a href="home.html">Contact Us</a>
+                <a href="feedback.html">Feedback</a>
+                <a href="car.html">Vehicle Register form</a>
+                <a href="driver.html">Driver Register form</a>
+                <a href="unemployeddriver.php">Search Drivers</a>
+                <a href="carquery.php">Vehicle Search Query</a>
+                <a href="home.html">Home</a>
+            </nav>
+        </div>
+    </div>
+
+
+	<br><br><br><br><br><h1>Vehicle Registration Form</h1> <hr>
+
+
+
+
+<form action="car-inc.php" method="POST">
+	<table>
+		<tr>
+		<td>Vehicle model: </td>
+		<td><input type="text" name="vmodel" required></td>	
+		</tr>
+		<tr>
+		<td>Vehicle colour: </td>
+		<td><input type="text" name="vcolour"></td>
+		</tr>
+		<tr>
+		<td>Type of Vehicle: </td>
+		<td>
+			<input type="radio" name="vtype" value="motorcycle" required>Motorcycle
+			<input type="radio" name="vtype" value="car" required>Car
+		</td>
+		</tr>
+		<tr>
+			<td>Owner Name: </td>
+			<td><input type="text" name="oname" required></td>
+		</tr>
+
+		<tr>
+			<td>Vehicle Number: </td>
+			<td><input type="text" name="vnumber" required></td>
+		</tr>
+		
+		<tr>
+			<td><input type="submit" value="submit"></td>
+		</tr>
+	</table>
+</form>
+</body>
+</html>
