@@ -10,7 +10,7 @@ if(!empty($vmodel) || !empty($vtype) || !empty($oname) || !empty($vnumber)){
 	$host = "localhost";
 	$dbUsername= "root";
 	$dbPassword = "";
-	$dbname = "youtube";
+	$dbname = "database";
 
 	//create connection
 	$conn = new mysqli($host,$dbUsername, $dbPassword, $dbname);

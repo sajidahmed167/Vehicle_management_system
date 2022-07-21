@@ -12,7 +12,7 @@ if(!empty($username) || !empty($gender) || !empty($nid) || !empty($phoneCode) ||
 	$host = "localhost";
 	$dbUsername = "root";
 	$dbPassword = "";
-	$dbname = "youtube";
+	$dbname = "database";
 
 	//create connection
 	$conn = new mysqli($host,$dbUsername, $dbPassword, $dbname);

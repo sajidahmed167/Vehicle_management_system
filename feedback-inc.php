@@ -11,7 +11,7 @@ if(!empty($username) || !empty($email) || !empty($questiona) || !empty($question
 	$host = "localhost";
 	$dbUsername = "root";
 	$dbPassword = "";
-	$dbname = "youtube";
+	$dbname = "database";
 
 	//create connection
 	$conn = new mysqli($host,$dbUsername, $dbPassword, $dbname);
